@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.Dynamic_Resume {
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f3eeeb;
+    border-radius: 20px;
+}
+
+#themeToggle {
+    height: 40px;
+    width: 85px;
+    margin-left: 85%;
+    color: rgb(231, 228, 228);
+    border-radius: 10px;
+}
+
+body.light-mode {
+    background-color: #f9f7f4;
+    color: #333;
+}
+
+.Dynamic_Resume.light-mode {
+    background-color: #fff;
+}
+
+button.light-mode {
+    background-color: #b0a295;
+}
+
+button.light-mode:hover {
+    background-color: #d8cec3;
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: #535151;
+    color: #e6e6e6;
+}
+
+.Dynamic_Resume.dark-mode {
+    background-color: #1e1e1e;
+}
+
+button.dark-mode {
+    background-color: #605947;
+}
+
+button.dark-mode:hover {
+    background-color: #857b60;
+}
+
+.Top {
+    color: #70573a;
+
+}
+
+.form {
+    margin: auto;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    text-shadow: 5px 2px rgb(160, 158, 158);
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.A {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.heading h2 {
+    color: #806241;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type="number"] {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#caree_objective {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    margin-left: 80%;
+    width: 50px;
+    padding: 5px;
+    background-color: #937047;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9cebd;
+}
+
+.Generate {
+    display: block;
+    margin-left: 80%;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    background-color: #7a5c39;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#inputSkillsContainer,
+#inputExperienceContainer,
+#inputInstitutionsContainer,
+#inputProjectsContainer,
+#inputLangContainer {
+    margin: 10px;
+}
+
+.removeButton {
+    margin-left: 81%;
+}
+
+/* Responsive Design */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .Dynamic_Resume {
+      width: 80%; 
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    h3 {
+      font-size: 20px; 
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    #caree_objective {
+      width: 75%; 
+    }
+    .Generate {
+        width: 50%; 
+        margin: 10px auto; 
+    }
+    .removeButton {
+        margin-left: 81%;
+        margin: 7px;
+    }
+    #themeToggle {
+        width: 30%; 
+        margin-left: 70%; 
+        height: 35px; 
+    }   
+}   

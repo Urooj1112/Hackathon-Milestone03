@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header-->
+    <div class="Dynamic_Resume">
+        <button id="themeToggle">Switch Theme</button>
+        <section class="Top">
+            <h1> <u>Dynamic Resume</u></h1>
+            <h3>Generate Your Resume</h3>
+        </section>
+
+
+        <!-- Personal \section-->
+        <form id="form">
+            <section class="Form">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Personal information</h2>
+                    </div>
+                    <div class="A">
+
+                        <h2>Full Name:</h2>
+                        <input type="text" placeholder="Full Name " id="fname" required>
+                        <h2>Designation:</h2>
+                        <input type="text" placeholder="Designation" id="designation" required>
+
+                        <h2>Contact:</h2>
+                        <input type="number" placeholder="Phone Number" id="phoneNumber" required>
+                        <h2>Email:</h2>
+                        <input type="text" placeholder="Email" id="email" required>
+                        <h2>Location:</h2>
+                        <input type="text" placeholder="eg: Karachi " id="location" required>
+                        <h2>Social Media Link:</h2>
+                        <input type="text" placeholder="eg: LinkedIn " id="socialLink" required>
+                    </div>
+                </fieldset>
+            </section>
+            <br>
+
+            <!-- Career Objective Section-->
+            <section class="career_objective"></section>
+            <fieldset>
+                <legend></legend>
+                <div class="heading">
+                    <h2>Career Objective</h2>
+                </div>
+                <div class="A">
+                    <textarea name="career_objective" id="caree_objective" clos="10" rows="10"
+                        placeholder="Career Objective" required></textarea>
+                </div>
+
+            </fieldset>
+            </section>
+
+            <br>
+            <!-- Experience Section-->
+            <section class="experience">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="A">
+                        <h2>Job Title:</h2>
+                        <input type="text" placeholder="Job title" id="jobTitle">
+
+                        <h2>Company Name:</h2>
+                        <input type="text" placeholder="Company Name" id="companyName">
+                    </div>
+                    <div id="inputExperienceContainer"></div>
+                    <br>
+                    <button type="button" id="addExperienceButton">+</button>
+                </fieldset>
+            </section>
+            <br>
+
+            <!-- Education section-->
+            <section class="education">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="A">
+                        <h2>Institution Name:</h2>
+                        <input type="text" class="institution" placeholder="Institution Name" id="institutionName"
+                            required>
+
+                        <h2>Degree:</h2>
+                        <input type="text" class="degree" placeholder="Degree" id="degreeName" required>
+                    </div>
+                    <div id="inputInstitutionsContainer"></div>
+                    <br>
+                    <button type="button" onclick="addInstitutionInput()">+</button>
+                </fieldset>
+            </section>
+            <br>
+
+            <!-- Skills Section-->
+            <section class="skills">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="A">
+                        <input type="text" class="skill" placeholder="Skills" id="skillInput" required>
+                    </div>
+                    <form id="mySkills">
+
+                        <div id="inputSkillsContainer">
+                            <br>
+                            <!-- Dynamic input fields will be added here -->
+                        </div>
+                        <br>
+                        <button type="button" onclick="addSkillsInput()">+</button>
+                    </form>
+            </section>
+            </fieldset>
+            </fieldset>
+            </section>
+            <br>
+            <!-- Projects -->
+            <section class="project">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="A">
+                        <input type="text" placeholder="Project Name" id="projectName" required>
+                    </div>
+                    <form id="myProjects">
+                        <div id="inputProjectsContainer">
+                            <br>
+                            <!-- Dynamic input fields will be added here -->
+                        </div>
+                        <br>
+                        <button type="button" onclick="addProjectsInput()">+</button>
+                    </form>
+            </section>
+            </fieldset>
+            </fieldset>
+            </section>
+            <br>
+            <!-- Language Section-->
+            <section class="language">
+                <fieldset>
+                    <legend></legend>
+                    <div class="heading">
+                        <h2>Language</h2>
+                    </div>
+                    <div class="A">
+                        <input type="text" class="lang" placeholder="Language" id="languageInput" required>
+                    </div>
+                    <form id="myForm">
+                        <div id="inputLangContainer">
+                            <br>
+                            <!-- Dynamic input fields will be added here -->
+                        </div>
+                        <br>
+                        <button type="button" onclick="addLangInput()">+</button>
+                    </form>
+                </fieldset>
+            </section>
+            <br><br>
+
+            <!-- Generate Button -->
+            <br>
+            <button class="Generate" type="submit" onclick="myFunction()">Generate </button>
+            <!-- <button type="button" id="generateBtn">Generate </button> -->
+        </form>
+
+    </div>
+
+    <div id="resume-display"></div>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
